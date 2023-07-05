@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercício</title>
+
+    <style>
+        .box_position {
+            background: white;
+            padding: 300px;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #branco {
+            position: static;
+        }
+
+        #roxo {
+            background: purple; padding: 80px;left: 0px;height: 150px;width: 150px;position: relative;
+        }
+
+        #laranja {
+            background: orange;padding: 50px; left: -24px; height: 100px;width: 100px; position: relative; top: -22px;
+        }
+
+        #vermelho {
+            background: red;padding: 20px;left: -20px; height: 95px;width: 95px; position: relative; bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_position" id="branco">
+        <div class="box_position" id="roxo">
+            <div class="box_position" id="laranja">
+                <div class="box_position" id="vermelho"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
