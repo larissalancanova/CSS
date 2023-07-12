@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício Posicionamento</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            -moz-mox-box: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: black;
+            width: 100%;
+            margin: auto;
+            min-height: 220px;
+
+        }
+
+        #box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 220px;
+            height: 190px;
+            border-radius: 10px;
+        }
+
+        #voleiagua {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        #natacao {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        #volei {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #chapeleiro {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .foto:hover {
+            border: solid 8px white;
+            border-radius: 15px;
+        }
+
+        #volei:active,
+        #voleiagua:active,
+        #natacao:active {
+            margin: 20px;
+            border: solid 10px red;
+        }
+
+        #chapeleiro:active {
+            margin: 20px;
+            border: solid 10px rgb(0, 199, 33);
+        }
+
+        h1,
+        p,
+        h3 {
+            text-align: center;
+        }
+
+        .jogadoras {
+            width: 300px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0px 1px 5px;
+            margin-left: 20px;
+            margin-top: 18px;
+
+        }
+
+        .todas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            width: 88%;
+            padding: 15px;
+        }
+
+        #fotojogadoras {
+            display: block;
+            margin: auto auto 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .acesse:hover {
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0px 1px 5px;
+        }
+
+        .acesse {
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0px 1px 5px gray;
+            color: black;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Clique na imagem correta</h1>
+    <p>Qual dessas imagens não faz parte de esportes?</p>
+    <div class="container" id="box">
+        <div class="foto" id="volei"> <img src="imagens/volei3.jpeg"></div>
+        <div class="foto" id="voleiagua"><img src="imagens/volei_agua.png"></div>
+        <div class="foto" id="natacao"> <img src="imagens/natacao.jpg"></div>
+        <div class="foto" id="chapeleiro"> <img src="imagens/chapeleiro.jpg" alt="Chapeleiro Maluco"> </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="todas">
+        <div class="jogadoras"><img src="imagens/volei2.jpg" alt="Jogadoras se abraçando" id="fotojogadoras">
+            <h3>Item</h3>
+            <p>Descrição do item</p>
+            <div class="acesse">ACESSE</div>
+        </div>
+
+        <div class="jogadoras"><img src="imagens/volei2.jpg" alt="Jogadoras se abraçando" id="fotojogadoras">
+            <h3>Item</h3>
+            <p>Descrição do item</p>
+            <div class="acesse"> ACESSE </div>
+        </div>
+
+        <div class="jogadoras"><img src="imagens/volei2.jpg" alt="Jogadoras se abraçando" id="fotojogadoras">
+            <h3>Item</h3>
+            <p>Descrição do item</p>
+            <div class="acesse"> ACESSE</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
